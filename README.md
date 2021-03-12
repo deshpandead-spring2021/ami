@@ -1,3 +1,3 @@
 # ami
 Trying to trigger actions.
-check now.
+checking the actions.
