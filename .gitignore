@@ -7,7 +7,5 @@ crash.log
 # For built boxes
 *.box
 
-
-
 # Bash file that runs the ami.json file
 *.sh
