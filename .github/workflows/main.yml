@@ -31,3 +31,8 @@ jobs:
           target: ami.json
         env:
             PACKER_LOG: 1 # enable debug log for packer
+            
+  # Runs a single command using the runners shell
+      - name: Packer Build
+        run: packer build -var 'aws_access_key=${{secrets.ACCESSKEY}}' -var 'aws_secret_key=${{secrets.SECRETKEY}}' -var 'aws_region=${{secrets.REGION}}' -var 'subnet_id=${{secrets.SUBNET}}' -var 'ami_users=${{secrets.USER}}' ami.json
+          
